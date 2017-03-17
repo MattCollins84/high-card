@@ -1,0 +1,23 @@
+{
+  "name": "high-card",
+  "description": "Simple high card game for multiple players made with Socket.IO and Pixi",
+  "main": "app.js",
+  "authors": [
+    "Matt Collins <matt@strikesandgutters.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/MattCollins84/high-card",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "pixi.js": "pixi#3.0.10",
+    "angular": "1.5",
+    "angular-socket-io": "^0.7.0"
+  }
+}

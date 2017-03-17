@@ -1,0 +1,26 @@
+<html ng-app='highCardClient'>
+<head>
+    <title>Player</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.css">
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/pixi.js/bin/pixi.js"></script>
+    <script src="/angular/angular.js"></script>
+    <script src="/angular-socket-io/socket.js"></script>
+    <script src="/js/client.js"></script>
+</head>
+<body>
+
+<div class="container mt20" ng-controller="ClientCtrl">
+
+    <form ng-show="!connected" ng-submit="connect()">
+        <div class="form-group" ng-class="{ 'has-error': !valid }">
+            <input type="name" ng-model="name" class="form-control input-lg" id="name" placeholder="Enter your name...">
+        </div>
+        <button type="submit" class="btn btn-success btn-lg">Connect</button>
+    </form>
+
+</div>
+
+</body>
+</html>
